@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Car3</title>
+
+    <meta charset="utf-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/maincss.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="css/costs.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/> -->
+
+
+
+
+  </head>
+  <body>
+    
+    <header class="v-header container">
+      <div class="fullscreen-video-wrap">
+        <video src="pexels-karolina-grabowska-6170303.mp4" autoplay loop id="video-background" muted plays-inline>
+      </video>
+      </div>
+      <div class="header-content">
+        <h1 class="hero-headline">FIND CARERS NEAR YOU</h1>
+        <p class="hero-subtitle">Download the app from the app store now!</p>
+        <div class="download">
+          <button class="btn" id="download" type="button" aria-haspopup="true" aria-expanded="false">Download</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Green Line -->
+    <section class="section-line"></section>
+
+    <!-- App Section -->
+    <section class="section-two">
+      <div class="card-container">
+        <div class="grid-container">
+          <div class="card item-3" style="padding: 0;">
+              <image id="product" src="assets/mainone.png"></image>
+              <!-- <image id="product" src="testa.png" style="width: 200px;"></image> -->
+          </div>
+          <div class="card item-2 border-0">
+            <div class="row ml-auto mr-3">
+              <p class="card-heading mr-3">Calender</p>
+              <div class="social">
+                <button class="btn" onclick="changeImageCalendar()"><i class="fa fa-calendar"></i></button>
+              </div>
+            </div>
+            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit doloribus odit inventore atque beatae magnam quaerat velit eum. Pariatur, recusandae?</p>
+          </div>
+          <div class="card item-1 border-0">
+            <div class="row ml-auto mr-3">
+              <p class="card-heading mr-3">Home</p>
+              <div class="social">
+                <button class="btn active" onclick="changeImageHome()"><i id="btnfa" class="fa fa-home"></i></button>
+              </div>
+            </div>
+            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit doloribus odit inventore atque beatae magnam quaerat velit eum. Pariatur, recusandae?</p>
+          </div>
+          <div class="card item-4 border-0">
+            <div class="row ml-1">
+              <div class="social">
+                <button class="btn" onclick="changeImageProfile()"><i class="fa fa-user"></i></button>
+              </div>
+              <p class="card-heading">Profile</p>
+            </div>
+            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit doloribus odit inventore atque beatae magnam quaerat velit eum. Pariatur, recusandae?</p>
+          </div>
+          <div class="card item-5 border-0">
+            <div class="row ml-1">
+              <div class="social">
+                <button class="btn" onclick="changeImageAppointment()"><i class="fa fa-book"></i></button>
+              </div>
+              <p class="card-heading">Appointments</p>
+            </div>
+            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit doloribus odit inventore atque beatae magnam quaerat velit eum. Pariatur, recusandae?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- App Section -->
+    <section class="section-three">
+      <div class="container">
+        <h2 class="title">Why Choose Us</h2>
+        <div class="grid">
+            <div class="item">
+                <i class="fa fa-blind"></i>
+                <h3>Specialised Care</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit doloribus odit inventore atque beatae magnam quaerat velit eum. Pariatur, recusandae?</p>
+            </div>
+            <div class="item">
+                <i class="fa fa-handshake-o"></i>
+                <h3>Flexibility</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit doloribus odit inventore atque beatae magnam
+                    quaerat velit eum. Pariatur, recusandae?</p>
+            </div>
+            <div class="item">
+                <i class="fa fa-calendar"></i>
+                <h3>Short-Term</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit doloribus odit inventore atque beatae magnam
+                    quaerat velit eum. Pariatur, recusandae?</p>
+            </div>
+            <div class="item">
+                <i class="fa fa-users"></i>
+                <h3>Community</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit doloribus odit inventore atque beatae magnam
+                    quaerat velit eum. Pariatur, recusandae?</p>
+            </div>
+            <div class="item">
+                <i class="fa fa-bar-chart"></i>
+                <h3>No Commitment</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit doloribus odit inventore atque beatae magnam
+                    quaerat velit eum. Pariatur, recusandae?</p>
+            </div>
+            <div class="item">
+                <i class="fa fa-lock"></i>
+                <h3>Security</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit doloribus odit inventore atque beatae magnam
+                    quaerat velit eum. Pariatur, recusandae?</p>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+    <section class="section-four">
+      <div class="blog-container">
+        <h2 class="title">View our Community</h2>
+        <p class="title-sub">View the community posts or ask a question</p>
+        
+        <div class="community-post">
+            <div class="item1">
+              <div class="row ml-1">
+                <div class="social">
+                  <image id="blog-post" src="assets/helenface.png"></image>
+                </div>
+                <div class="column">
+                  <p class="item1-heading">Helen Powell</p>
+                  <p class="time-heading">5 Hours Ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="item2">
+              <button class="btn float-right" id="health">
+                Health
+              </button>
+            </div>
+            <div class="item3">
+              <p>
+                Hi there. Im concerned about my sixteen year old daughter. She has ASD and has recently started having speech problems but has never had problems speaking previously but now she stutters and sounds like she is struggling to form a sentence something. What should I do?
+              </p>
+            </div>
+            <div class="item4">
+              <div class="column">
+                <h3 class="answer-top">Top Answer</h3>
+                <p>My son started to stutter when he started school, one of the reasons we pulled him out. Could it be somthing has changed that is putting her under stress?</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Green Line -->
+    <section class="section-line"></section>
+
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+          <div class="footer-content">
+              <div class="items">
+                  <p class="logo">CAR3</p>  
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <div class="social">
+                      <a href="#"><i class="fa fa-facebook-f"></i></a>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                  </div>
+              </div>
+              <div class="items">
+                  <h3> Product</h3>
+                  <ul>
+                      <li><a href="#">Companies</a></li>
+                      <li><a href="#">Index</a></li>
+                      <li><a href="#">Pricing</a></li>
+                  </ul>                          
+              </div>
+
+              <div class="items">
+                  <h3>Legal</h3>
+              <ul>
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+              </ul>
+              </div>
+              <div class="items">
+                  <h3>Support</h3>
+                  <ul>
+                      <li><a href="#">Complaints</a></li>
+                      <li><a href="#">Customer Support</a></li>
+
+                  </ul>
+              </div>
+
+          </div>
+          <hr>
+          <p class="end">© 2020 CAR3. All rights reserved.</p>
+      </div>
+  </footer>
+
+    
+  </body>
+
+
+  <script>
+    function changeImageCalendar() {
+      document.getElementById('product').src = "assets/calendar.png";
+    }
+
+    function changeImageHome() {
+      document.getElementById('product').src = "assets/home.png";
+    }
+
+    function changeImageAppointment() {
+      document.getElementById('product').src = "assets/appointment.png";
+    }
+
+    function changeImageProfile() {
+      document.getElementById('product').src = "assets/profile.png";
+    }
+
+    var btns = document.querySelectorAll(".btn");
+    Array.from(btns).forEach(item => {
+        item.addEventListener("click", () => {
+          var selected = document.getElementsByClassName("active");
+          selected[0].className = selected[0].className.replace(" active", "");
+          item.className += " active";
+        });
+    });
+
+
+  </script>
+</html>
